@@ -15,7 +15,7 @@ class MakeACaptain {
         }
         else
         {
-            System.out.print("You already have a Captain for your team.");
+            System.out.println("You already have a Captain for your team.");
             System.out.println("Send him for the toss.");
         }
         return _captain;
