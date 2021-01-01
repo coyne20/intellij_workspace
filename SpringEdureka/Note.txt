@@ -1,0 +1,32 @@
+
+- BeanFactory loads the beans as and when they are required.
+- ApplicationContext loads all beans during the startup of the application. (Resource intensive :- memory exhaustive)
+
+Spring Container Lifecyle sequence:
+
+1. Instantiate
+2. Populate with data
+3. Call BeanNameAwares - setBeanName();
+4. Call BeanFactoryName - setBeanFactory();
+5. Call ApplicationContextAwares - setApplicationContext();
+6. Preinitialize(BeanPostProcessor)
+7. Call InitialisingBean's afterPropertySet()
+8. Call custom-init()
+9. Post Initialization(BeanPostProcessor) -> Bean is ready to use
+10. Call DisposableBean's destroy() -> Container shutdown
+11. Call custom-destroy() -> Container shutdown
+
+Dependency injection is a design pattern that removes the dependency from the code, that makes the application easy to manage and
+test.
+Dependency injection makes the code loosely coupled, which means change in implementation doesnt affect the user.
+
+Spring framework has 2 ways of invoking dependency injection:
+1. Constructor method
+2. Setter method
+
+What is Spring AOP?
+
+- Spring AOP enables AOP in Spring Applications
+- Aspects enables modularization of concerns
+- AOP adds cross cutting concerns before and after around the actual logic
+- Easy to maintain code in the present and future. 
