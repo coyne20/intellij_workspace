@@ -12,6 +12,7 @@ public class Customers {
     private String courseName;
 
     @Autowired
+    // Customers class needs to know about the existence of Technologies class (use Autowired on reference on dependency)
     private Technologies techDetail;
 
     public Technologies getTechDetail() {
