@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sbHelloWorldEdureka:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sbHelloWorldEdureka</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="sbHelloWorldEdureka.war">
+      <element id="artifact" artifact-name="sbHelloWorldEdureka:war exploded" />
+    </root>
+  </artifact>
+</component>
