@@ -1,0 +1,16 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/test_local
+    username: postgres
+    password: password25$
+    pool-size: 30
+    driver-class-name: org.postgresql.Driver
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  flyway:
+    locations: classpath:db/migration
+
